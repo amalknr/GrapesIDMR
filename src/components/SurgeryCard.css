@@ -1,0 +1,66 @@
+/* SurgeryCard.css */
+
+.surgery-card {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0f4ff;
+    border: 1px solid #d0d8e8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .surgery-card h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .surgery-card p {
+    margin: 5px 0;
+    color: #3614e1;
+  }
+  
+  .status.upcoming {
+    color: green;
+  }
+  
+  .status.cancelled {
+    color: red;
+  }
+  
+  .status.scheduled {
+    color: rgb(14, 14, 215);
+  }
+  @media (max-width: 600px) {
+    .surgery-card h3 {
+      font-size: 16px;
+    }
+  
+    .surgery-card p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Grid layout for larger screens */
+  @media (min-width: 600px) {
+    .surgery-card {
+      flex: 1 1 calc(50% - 20px); /* Two cards per row with a gap */
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .surgery-card {
+      flex: 1 1 calc(33.33% - 20px); /* Three cards per row with a gap */
+    }
+  }
+  
+  /* Status color styles */
+  .status.upcoming {
+    color: green;
+  }
+  
+  .status.cancelled {
+    color: red;
+  }
+  
+  .status.scheduled {
+    color: blue;
+  }
